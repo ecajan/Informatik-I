@@ -16,21 +16,22 @@ class Calendar:
         if start_time.split(":")[0] == end_time.split(":")[0] and start_time.split(":")[1] > end_time.split(":")[1]:
             raise Exception("ligma")
         else:
-            events[date_str] = tuple[ueid, start_time, end_time, description]
-            ueid =+ 1
+            self.events[date_str] = tuple[self.ueid, start_time, end_time, description]
+            self.ueid =+ 1
 
     def get_events(self, date_str):
-        if true:
+        if True:
             rtrnls = []
-            for event in events[date_str]:
+            for event in self.events[date_str]:
                     rtrnls.append(event)
         return rtrnls   #Not sorted, yet
 
 
     def delete_event(self, event_id):
-        for key, value in events.items():
-            if value[0] == event_id:
-                pass
+        pass
+        #for key, value in self.events.items():
+        #    if value[0] == event_id:    #why this no worky?
+        #        pass
 
 
 
